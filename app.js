@@ -20,15 +20,15 @@ app.set("port", process.env.PORT || 3000);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
-app.use(
+/*app.use(
 	helmet.hsts({
 		maxAge: ms("1 year"),
 		includeSubdomains: true
 	})
-);
+);*/
 
-app.enable("trust proxy");
-app.use(enforceSSL());
+//app.enable("trust proxy");
+//app.use(enforceSSL());
 
 //body-parser middleware is used to parse form data
 app.use(bodyParser.urlencoded({ extended: false }));
